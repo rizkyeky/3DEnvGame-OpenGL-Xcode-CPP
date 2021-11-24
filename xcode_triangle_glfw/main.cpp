@@ -116,8 +116,7 @@ int main() {
     
     glBindVertexArray(0);
     
-    while (!glfwWindowShouldClose(window))
-    {
+    while (!glfwWindowShouldClose(window)) {
         processInput(window);
         
         // render

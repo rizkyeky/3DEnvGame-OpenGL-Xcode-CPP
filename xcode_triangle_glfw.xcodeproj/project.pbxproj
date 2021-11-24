@@ -7,23 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25213A9C274381C700D4F5E4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25213A9B274381C700D4F5E4 /* main.cpp */; };
 		25213AA42743824000D4F5E4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25213AA32743824000D4F5E4 /* OpenGL.framework */; };
 		25213AA82743824D00D4F5E4 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25213AA72743824D00D4F5E4 /* libGLEW.2.2.0.dylib */; };
 		25213AAA2743826400D4F5E4 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25213AA92743826400D4F5E4 /* libglfw.3.3.dylib */; };
 		25213AAC274385E000D4F5E4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25213AAB274385E000D4F5E4 /* Metal.framework */; platformFilter = maccatalyst; };
 		25213AAE27439A6300D4F5E4 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 25213AAD27439A6300D4F5E4 /* glad.c */; };
+		25213ABA2743D84500D4F5E4 /* rectangle_texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25213AB92743D84500D4F5E4 /* rectangle_texture.cpp */; };
+		259E51F52745D4380093CB2B /* rectangle_tranform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259E51F42745D4380093CB2B /* rectangle_tranform.cpp */; };
+		25DC66AB274485EF0073D009 /* container.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25213ABE2743D94600D4F5E4 /* container.jpg */; };
+		25DC66AC274485EF0073D009 /* 4.1.texture.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25213ABD2743D8F200D4F5E4 /* 4.1.texture.fs */; };
+		25DC66AD274485EF0073D009 /* 4.1.texture.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25213ABC2743D8F200D4F5E4 /* 4.1.texture.vs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		25213A96274381C700D4F5E4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				25DC66AB274485EF0073D009 /* container.jpg in CopyFiles */,
+				25DC66AC274485EF0073D009 /* 4.1.texture.fs in CopyFiles */,
+				25DC66AD274485EF0073D009 /* 4.1.texture.vs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -36,6 +43,14 @@
 		25213AAB274385E000D4F5E4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		25213AAD27439A6300D4F5E4 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../Dev/glad/src/glad.c; sourceTree = "<group>"; };
 		25213AAF27439DFA00D4F5E4 /* triangle_blink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = triangle_blink.cpp; sourceTree = "<group>"; };
+		25213AB22743B88800D4F5E4 /* triangle_gradient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = triangle_gradient.cpp; sourceTree = "<group>"; };
+		25213AB72743C7AB00D4F5E4 /* shader_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_s.h; sourceTree = "<group>"; };
+		25213AB92743D84500D4F5E4 /* rectangle_texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rectangle_texture.cpp; sourceTree = "<group>"; };
+		25213ABB2743D85D00D4F5E4 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		25213ABC2743D8F200D4F5E4 /* 4.1.texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 4.1.texture.vs; sourceTree = "<group>"; };
+		25213ABD2743D8F200D4F5E4 /* 4.1.texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 4.1.texture.fs; sourceTree = "<group>"; };
+		25213ABE2743D94600D4F5E4 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		259E51F42745D4380093CB2B /* rectangle_tranform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rectangle_tranform.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,9 @@
 		25213A8F274381C700D4F5E4 = {
 			isa = PBXGroup;
 			children = (
+				25213ABE2743D94600D4F5E4 /* container.jpg */,
+				25213ABD2743D8F200D4F5E4 /* 4.1.texture.fs */,
+				25213ABC2743D8F200D4F5E4 /* 4.1.texture.vs */,
 				25213AAD27439A6300D4F5E4 /* glad.c */,
 				25213A9A274381C700D4F5E4 /* xcode_triangle_glfw */,
 				25213A99274381C700D4F5E4 /* Products */,
@@ -74,8 +92,13 @@
 		25213A9A274381C700D4F5E4 /* xcode_triangle_glfw */ = {
 			isa = PBXGroup;
 			children = (
+				25213AB92743D84500D4F5E4 /* rectangle_texture.cpp */,
 				25213A9B274381C700D4F5E4 /* main.cpp */,
 				25213AAF27439DFA00D4F5E4 /* triangle_blink.cpp */,
+				25213AB22743B88800D4F5E4 /* triangle_gradient.cpp */,
+				25213AB72743C7AB00D4F5E4 /* shader_s.h */,
+				25213ABB2743D85D00D4F5E4 /* stb_image.h */,
+				259E51F42745D4380093CB2B /* rectangle_tranform.cpp */,
 			);
 			path = xcode_triangle_glfw;
 			sourceTree = "<group>";
@@ -148,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25213A9C274381C700D4F5E4 /* main.cpp in Sources */,
+				25213ABA2743D84500D4F5E4 /* rectangle_texture.cpp in Sources */,
+				259E51F52745D4380093CB2B /* rectangle_tranform.cpp in Sources */,
 				25213AAE27439A6300D4F5E4 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
